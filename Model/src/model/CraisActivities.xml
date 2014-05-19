@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="CraisActivities"
+  Version="12.1.2.66.68"
+  InheritPersonalization="merge"
+  DBObjectType="table"
+  DBObjectName="CRAIS_ACTIVITIES"
+  AliasName="CraisActivities"
+  BindingStyle="OracleName">
+  <Attribute
+    Name="Code"
+    IsNotNull="true"
+    Precision="1"
+    ColumnName="CODE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CRAIS_ACTIVITIES"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="1"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Description"
+    Precision="100"
+    ColumnName="DESCRIPTION"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CRAIS_ACTIVITIES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="100"/>
+    </DesignTime>
+  </Attribute>
+  <Key
+    Name="CrActPk"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="CR_ACT_PK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.CraisActivities.Code"/>
+    </AttrArray>
+  </Key>
+</Entity>

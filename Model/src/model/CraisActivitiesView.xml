@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="CraisActivitiesView"
+  Version="12.1.2.66.68"
+  InheritPersonalization="merge"
+  SelectList="CraisActivities.CODE, 
+       CraisActivities.DESCRIPTION"
+  FromList="CRAIS_ACTIVITIES CraisActivities"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full">
+  <EntityUsage
+    Name="CraisActivities"
+    Entity="model.CraisActivities"/>
+  <ViewAttribute
+    Name="Code"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Code"
+    EntityUsage="CraisActivities"
+    AliasName="CODE"/>
+  <ViewAttribute
+    Name="Description"
+    PrecisionRule="true"
+    EntityAttrName="Description"
+    EntityUsage="CraisActivities"
+    AliasName="DESCRIPTION"/>
+</ViewObject>
